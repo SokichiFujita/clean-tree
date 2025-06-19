@@ -1,6 +1,6 @@
 {
   "name": "clean-tree",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/clean-tree.js",
   "bin": {
     "clean-tree": "./dist/clean-tree.js"

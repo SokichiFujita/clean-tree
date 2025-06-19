@@ -1,4 +1,4 @@
-# clear-tree
+# clean-tree
 
 A modern, TypeScript-based implementation of the `tree` command with advanced filtering and .gitignore support.
 
@@ -17,14 +17,14 @@ A modern, TypeScript-based implementation of the `tree` command with advanced fi
 ### Global Installation (Recommended)
 
 ```bash
-npm install -g clear-tree
+npm install -g clean-tree
 ```
 
 ### Local Installation
 
 ```bash
-npm install clear-tree
-npx clear-tree
+npm install clean-tree
+npx clean-tree
 ```
 
 ## Usage
@@ -33,29 +33,29 @@ npx clear-tree
 
 ```bash
 # Display current directory tree
-clear-tree
+clean-tree
 
 # Display specific directory
-clear-tree /path/to/directory
+clean-tree /path/to/directory
 ```
 
 ### Advanced Options
 
 ```bash
 # Limit depth to 2 levels
-clear-tree --depth 2
+clean-tree --depth 2
 
 # Respect .gitignore rules
-clear-tree --gitignore
+clean-tree --gitignore
 
 # Exclude specific patterns
-clear-tree --exclude "node_modules"
+clean-tree --exclude "node_modules"
 
 # Respect all .*ignore files
-clear-tree --allignore
+clean-tree --allignore
 
 # Combine multiple options
-clear-tree src --depth 3 --allignore --exclude "*.log"
+clean-tree src --depth 3 --allignore --exclude "*.log"
 ```
 
 ## Command Line Options
@@ -73,7 +73,7 @@ clear-tree src --depth 3 --allignore --exclude "*.log"
 ### Basic Tree Display
 
 ```bash
-clear-tree
+clean-tree
 ```
 
 Output:
@@ -95,7 +95,7 @@ my-project
 ### With Depth Limitation
 
 ```bash
-clear-tree --depth 2
+clean-tree --depth 2
 ```
 
 Output:
@@ -114,7 +114,7 @@ my-project
 ### Respecting .gitignore
 
 ```bash
-clear-tree --gitignore
+clean-tree --gitignore
 ```
 
 This will automatically exclude files and directories listed in your `.gitignore` file.
@@ -122,9 +122,9 @@ This will automatically exclude files and directories listed in your `.gitignore
 ### Excluding Patterns
 
 ```bash
-clear-tree --exclude "node_modules"
-clear-tree --exclude "*.log"
-clear-tree --exclude "{dist,build}"
+clean-tree --exclude "node_modules"
+clean-tree --exclude "*.log"
+clean-tree --exclude "{dist,build}"
 ```
 
 ## Pattern Matching
@@ -140,18 +140,18 @@ The `--exclude` option supports glob patterns:
 Examples:
 ```bash
 # Exclude all JavaScript files
-clear-tree --exclude "*.js"
+clean-tree --exclude "*.js"
 
 # Exclude multiple directories
-clear-tree --exclude "{node_modules,dist,build}"
+clean-tree --exclude "{node_modules,dist,build}"
 
 # Exclude all hidden files
-clear-tree --exclude ".*"
+clean-tree --exclude ".*"
 ```
 
 ## .gitignore Integration
 
-When using the `--gitignore` flag, `clear-tree` will:
+When using the `--gitignore` flag, `clean-tree` will:
 
 1. Look for a `.gitignore` file in the target directory
 2. Parse the gitignore patterns
@@ -171,8 +171,8 @@ This is particularly useful for development projects where you want to see the p
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/clear-tree.git
-cd clear-tree
+git clone https://github.com/your-username/clean-tree.git
+cd clean-tree
 
 # Install dependencies
 npm install
@@ -215,7 +215,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you encounter any issues or have questions:
 
-1. Check the [Issues](https://github.com/your-username/clear-tree/issues) page
+1. Check the [Issues](https://github.com/your-username/clean-tree/issues) page
 2. Create a new issue if your problem isn't already reported
 3. Provide as much detail as possible, including:
    - Your operating system

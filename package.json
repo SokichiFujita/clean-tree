@@ -1,0 +1,30 @@
+{
+  "name": "clean-tree",
+  "version": "1.0.0",
+  "main": "dist/clean-tree.js",
+  "bin": {
+    "clean-tree": "./dist/clean-tree.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/clean-tree.ts",
+    "start": "node dist/clean-tree.js",
+    "test": "npm run build && node test/test.js",
+    "watch": "tsc --watch"
+  },
+  "keywords": ["tree", "clean", "cli"],
+  "author": "Sokichi Fujita",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "ignore": "^7.0.5",
+    "yargs": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "@types/yargs": "^17.0.33",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

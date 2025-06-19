@@ -8,6 +8,7 @@ A modern, TypeScript-based implementation of the `tree` command with advanced fi
 - 📏 **Depth limiting** - Control how deep to traverse with `--depth`
 - 🚫 **Pattern exclusion** - Exclude files/directories with glob patterns
 - 📝 **.gitignore support** - Respect .gitignore rules automatically
+- 📝 **.\*ignore support** - Respect .*ignore rules automatically for LLM inputs
 - 🎨 **Colorized output** - Directories and files are color-coded for better readability
 - ⚡ **Fast & lightweight** - Efficient traversal with minimal dependencies
 - 🔧 **Cross-platform** - Works on Windows, macOS, and Linux
@@ -204,12 +205,6 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Related Projects
-
-- [tree](https://linux.die.net/man/1/tree) - The original tree command
-- [exa](https://the.exa.website/) - A modern replacement for ls with tree functionality
-- [fd](https://github.com/sharkdp/fd) - A simple, fast and user-friendly alternative to find
 
 ## Support
 
